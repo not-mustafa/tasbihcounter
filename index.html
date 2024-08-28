@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="arabic-text-top">الله أكبر</div>
+        <div class="counter-display">0</div>
+        <div class="counter-container">
+            <button class="counter-button" onclick="incrementCounter()">
+                <!-- Arrow Up -->
+                <svg class="arrow up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 8l-4 4h8l-4-4z" fill="currentColor"/>
+                </svg>
+            </button>
+            <button class="counter-button small" onclick="decrementCounter()">
+                <!-- Arrow Down -->
+                <svg class="arrow down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 16l-4-4h8l-4 4z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+        <button class="reset-button" onclick="resetCounter()">Reset</button>
+        <button class="edit-button" onclick="editCounter()">Edit</button>
+        <div class="arabic-text-bottom">أستغفر الله</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

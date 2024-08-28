@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.counter-display {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.counter-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: maroon;
+    color: lightcoral;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.counter-button.small {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 0;
+}
+
+.counter-button:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    fill: lightcoral; /* Arrow color */
+}
+
+.up-arrow {
+    transform: rotate(0deg); /* Arrow pointing upwards */
+}
+
+.down-arrow {
+    transform: rotate(180deg); /* Arrow pointing downwards */
+}
+
+.reset-button, .edit-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.reset-button:hover, .edit-button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px white;
+}
+
+/* First Arabic Text (Top Center) */
+.arabic-text-top {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 20px;
+}
+
+/* Second Arabic Text (Beneath Edit Button) */
+.arabic-text-bottom {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    text-align: center;
+}
