@@ -44,6 +44,7 @@ body {
     justify-content: center;
     position: relative;
     margin-bottom: 10px;
+    outline: none; /* Removes the default focus outline */
 }
 
 .counter-button.small {
@@ -54,6 +55,12 @@ body {
 
 .counter-button:hover {
     box-shadow: 0 0 15px white;
+}
+
+/* Custom focus style for counter buttons */
+.counter-button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: none; /* Removes any additional box-shadow */
 }
 
 .arrow {
@@ -79,6 +86,7 @@ body {
     border: 2px solid white;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
+    outline: none; /* Removes the default focus outline */
 }
 
 .reset-button:hover, .edit-button:hover {
